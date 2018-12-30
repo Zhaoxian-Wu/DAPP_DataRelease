@@ -1,0 +1,129 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"name": "register",
+		"outputs": [
+			{
+				"name": "succ",
+				"type": "bool"
+			},
+			{
+				"name": "err",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "year",
+				"type": "uint256"
+			},
+			{
+				"name": "title",
+				"type": "string"
+			},
+			{
+				"name": "data",
+				"type": "int256[12]"
+			}
+		],
+		"name": "releaseYearByMonth",
+		"outputs": [
+			{
+				"name": "succ",
+				"type": "bool"
+			},
+			{
+				"name": "err",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "a",
+				"type": "address"
+			}
+		],
+		"name": "getName",
+		"outputs": [
+			{
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"name": "getPublicationYears",
+		"outputs": [
+			{
+				"name": "data",
+				"type": "uint256[]"
+			},
+			{
+				"name": "err",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "year",
+				"type": "uint256"
+			}
+		],
+		"name": "getYearByMonth",
+		"outputs": [
+			{
+				"name": "title",
+				"type": "string"
+			},
+			{
+				"name": "data",
+				"type": "int256[12]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

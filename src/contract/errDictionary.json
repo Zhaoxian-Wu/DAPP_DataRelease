@@ -1,0 +1,5 @@
+{
+  "Returned error: could not decrypt key with given passphrase": "密码错误",
+  "Returned error: insufficient funds for gas * price + value": "账户余额不足",
+  "Transaction was not mined within750 seconds, please make sure your transaction was properly sent. Be aware that it might still be mined!": "交易暂时没有被打包.请稍后再来查看"
+}
