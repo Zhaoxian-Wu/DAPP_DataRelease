@@ -39,6 +39,46 @@ module.exports = {
   }
 }
 ```
+
+## 运行
+使用`npm install`安装依赖.并使用`npm run serve`命令启动后端程序.在保证区块链成功连接的情况下,在浏览器访问`localhost:8080`即可使用.
+
+# 功能
+- 创建区块链账户
+- 组织负责人使用账户注册组织
+- 组织按以一年为单位,精细到一个月发布数据
+- 区块链上其他人可以通过智能合约获取某个组织公布的数据,并自定义和可视化地查看数据
+
+# 运行效果
+## 查看信息
+其他用户可以查看已发布的数据  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/main.png?raw=true)  
+## 创建账户
+用户可以创建一个区块链账户,进行组织注册和数据发布工作  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/createAccount.png?raw=true)  
+## 注册组织
+用户可以注册一个用户,以便进行数据发布工作.注册组织需要用户密码解锁账户.  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/newOrganisation.png?raw=true)  
+## 发布信息
+已注册组织的用户可以进行信息发布,信息发布需要用户密码解锁账户.  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/releaseData.png?raw=true)  
+## 完善的错误提示机制
+用户界面的错误提示分为输入提示和运行结果提示  
+### 输入错误提示
+当用户有不合法输入时,界面会对错误进行提示  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/errHint1.png?raw=true)  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/errHint2.png?raw=true)  
+### 运行结果提示
+当区块链账户解锁密码错误时,界面会弹出提示.  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/mes_passerr.png?raw=true)  
+当区块链账户余额不够支付当前交易(如注册和发布数据)时,程序会弹出提示.  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/mes_nogas.png?raw=true)  
+当交易允许被进行,将可以等待写入链内,程序会弹出提示框提示用户等待交易被写入.  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/mes_wait.png?raw=true)  
+当交易成功后,程序会弹出提示,报告成功.  
+![](https://github.com/MrFive5555/DAPP_DataRelease/blob/master/picture/mes_succ.png?raw=true)  
+
+
 # vue相关
 ## Project setup
 ```
